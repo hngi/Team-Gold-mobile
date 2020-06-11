@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:quizappteamgold/home.dart';
+import 'package:quizappteamgold/screens/home.dart';
 
 class resultpage extends StatefulWidget {
-
   int marks;
-  resultpage({Key key, @required this.marks}) : super(key : key);
+  resultpage({Key key, @required this.marks}) : super(key: key);
   @override
   _resultpageState createState() => _resultpageState(marks);
 }
 
 class _resultpageState extends State<resultpage> {
-
   List<String> images = [
     "images/success.jpeg",
     "images/good.jpeg",
@@ -19,18 +17,22 @@ class _resultpageState extends State<resultpage> {
 
   String message;
   String image;
+  Color myColor;
 
   @override
-  void initState(){
-    if(marks < 20){
+  void initState() {
+    if (marks < 20) {
       image = images[2];
       message = "You have a long way to go...\n" + "You Scored $marks";
-    }else if(marks < 35){
+      myColor = Color.fromRGBO(190, 56, 55, 1.0);
+    } else if (marks < 35) {
       image = images[1];
       message = "Try harder...\n" + "You Scored $marks";
-    }else{
+      myColor = Colors.grey;
+    } else {
       image = images[0];
       message = "You are good...\n" + "You Scored $marks";
+      myColor = Colors.green;
     }
     super.initState();
   }
@@ -41,8 +43,12 @@ class _resultpageState extends State<resultpage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: myColor,
         title: Text(
           "Result",
+          style: TextStyle(
+            fontFamily: "Balsamiq",
+          ),
         ),
       ),
       body: Column(
@@ -76,12 +82,12 @@ class _resultpageState extends State<resultpage> {
                           message,
                           style: TextStyle(
                             fontSize: 20.0,
-                            fontFamily: "Quando",
+                            fontFamily: "Balsamiq",
                           ),
                         ),
                       ),
                     )
-                    ],
+                  ],
                 ),
               ),
             ),
@@ -92,14 +98,15 @@ class _resultpageState extends State<resultpage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 OutlineButton(
-                  onPressed: (){
+                  onPressed: () {
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
                       builder: (context) => homepage(),
                     ));
                   },
                   child: Text(
-                    "Continue",
+                    "Continue",                                                     
                     style: TextStyle(
+                      fontFamily: "Balsamiq",
                       fontSize: 18.0,
                     ),
                   ),

@@ -1,7 +1,6 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:quizappteamgold/home.dart';
+import 'package:quizappteamgold/screens/home.dart';
 
 class splashscreen extends StatefulWidget {
   @override
@@ -25,11 +24,11 @@ class _splashscreenState extends State<splashscreen> {
       backgroundColor: Colors.indigo,
       body: Center(
         child: Text(
-          "Quiz App by Team Gold",
+          "Team Gold Quiz App",
           style: TextStyle(
             fontSize: 30.0,
             color: Colors.white,
-            fontFamily: "Satisfy"
+            fontFamily: "Balsamiq"
           ),
         ),
       ),
