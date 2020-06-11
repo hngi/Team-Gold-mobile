@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quizappteamgold/screens/home.dart';
-import 'package:quizappteamgold/screens/quiz.dart';
-import 'package:quizappteamgold/screens/result.dart';
+import 'package:quizappteamgold/screens/quizpage.dart';
+import 'package:quizappteamgold/screens/resultpage.dart';
 import 'package:quizappteamgold/screens/splash.dart';
 
 void main() => runApp(MyApp());
@@ -20,8 +20,8 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         'home': (context) => homepage(),
-        'quiz': (context) => Quiz(),
-        'result': (context) => Result(),
+        'quiz': (context) => quizpage(),
+        'result': (context) => resultpage(),
       },
       home: splashscreen(),
     );
