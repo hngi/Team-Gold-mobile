@@ -1,29 +1,16 @@
-# Team Gold Mobile (Quiz App)
+# quizappteamgold
 
-## To get started:
+Team Gold HNGi7 task 2
 
-- Fork the repository at the top right corner
-- Click on clone or download, copy the url you see after clicking on it
-- Head to your local machine and create a folder with an appropriate name 
-- Right-click anywhere in the folder and choose `git bash here`, automatically git bash will open.
-- In your terminal or gitbash do `git clone https://github.com/<your-github-user-name>/Team-Gold-Mobile.git` <br>
-for me it will look like this
--> `git clone https://github.com/ugwulo/Team-Gold-Mobile.git`
-- start your work do ` cd Team-Gold-Mobile` 
+## Getting Started
 
-Now you need to add an upstream to track changes in the remote repository
-- run ` git remote add upstream https://github.com/hngi/Team-Gold-Mobile.git`
-- run `git pull upstream development
-### Now you need to create a new branch corresponding to what you are working on <br>
-example, if you are working on a feature called `Widget` it should be like this ->
-- `git checkout -b feat/widget` or `git checkout -b feat/widget-quiz-questions` (use hiphen to seperate different words).
+This project is a starting point for a Flutter application.
 
-- Make your Contribution, When you are done ->
-- run `git add .`
-- run `git commit -m "feature: create <whatever-you-did>"`
-- run `git push origin feat/widget` remember, it should be the name of the branch you created earlier.
-- Go-To github, locate the repository you forked earlier, you will see `compare and pull request` <br> 
-click on it and type your message, `click on create pull request`.
-- Wait for merge and or get on with another feature.
+A few resources to get you started if this is your first Flutter project:
 
-## Happy Contributing!! 
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
