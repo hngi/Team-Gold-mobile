@@ -3,7 +3,8 @@ import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:quizappteamgold/resultpage.dart';
+import 'package:html_unescape/html_unescape.dart';
+import 'package:quizappteamgold/screens/resultpage.dart';
 
 class getjson extends StatelessWidget {
   // accept the langname as a parameter
@@ -26,19 +27,20 @@ class getjson extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     setasset();
 
     return FutureBuilder(
       future:
-      DefaultAssetBundle.of(context).loadString(assettoload, cache: true),
+          DefaultAssetBundle.of(context).loadString(assettoload, cache: true),
       builder: (context, snapshot) {
         List mydata = json.decode(snapshot.data.toString());
         if (mydata == null) {
           return Scaffold(
             body: Center(
-              child: Text(
-                "Loading",
+              child: CircularProgressIndicator(
+                valueColor: new AlwaysStoppedAnimation<Color>(
+                  Colors.indigoAccent,
+                ),
               ),
             ),
           );
@@ -67,6 +69,7 @@ class _quizpageState extends State<quizpage> {
   Color wrong = Colors.red;
   int marks = 0;
   int i = 1;
+  int qn = 1;
   // extra varibale to iterate
   int j = 1;
   int timer = 30;
@@ -82,17 +85,15 @@ class _quizpageState extends State<quizpage> {
 
   bool canceltimer = false;
 
-
-
-  genrandomarray(){
+  genrandomarray() {
     var distinctIds = [];
     var rand = new Random();
-    for (int i = 0; ;) {
+    for (int i = 0;;) {
       distinctIds.add(rand.nextInt(10));
       random_array = distinctIds.toSet().toList();
-      if(random_array.length < 10){
+      if (random_array.length < 10) {
         continue;
-      }else{
+      } else {
         break;
       }
     }
@@ -105,7 +106,6 @@ class _quizpageState extends State<quizpage> {
     genrandomarray();
     super.initState();
   }
-
 
   @override
   void setState(fn) {
@@ -138,6 +138,7 @@ class _quizpageState extends State<quizpage> {
       if (j < 10) {
         i = random_array[j];
         j++;
+        qn++;
       } else {
         Navigator.of(context).pushReplacement(MaterialPageRoute(
           builder: (context) => resultpage(marks: marks),
@@ -152,7 +153,6 @@ class _quizpageState extends State<quizpage> {
   }
 
   void checkanswer(String k) {
-
     if (mydata[2][i.toString()] == mydata[1][i.toString()][k]) {
       marks = marks + 5;
       colortoshow = right;
@@ -179,7 +179,7 @@ class _quizpageState extends State<quizpage> {
           mydata[1][i.toString()][k],
           style: TextStyle(
             color: Colors.white,
-            fontFamily: "Alike",
+            fontFamily: "Balsamiq",
             fontSize: 16.0,
           ),
           maxLines: 1,
@@ -190,7 +190,7 @@ class _quizpageState extends State<quizpage> {
         minWidth: 200.0,
         height: 45.0,
         shape:
-        RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
       ),
     );
   }
@@ -199,76 +199,97 @@ class _quizpageState extends State<quizpage> {
   Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations(
         [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
-    return WillPopScope(
-      onWillPop: () {
-        return showDialog(
-            context: context,
-            builder: (context) => AlertDialog(
-              title: Text(
-                "Quiz app",
-              ),
-              content: Text("You Can't Go Back At This Stage."),
-              actions: <Widget>[
-                FlatButton(
-                  onPressed: () {
-                    Navigator.of(context).pop();
+    return Scaffold(
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 5.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: <Widget>[
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushReplacementNamed(context, 'home');
                   },
-                  child: Text(
-                    'Ok',
+                  child: Icon(
+                    Icons.close,
+                    color: Colors.indigoAccent,
+                    size: 32.0,
                   ),
-                )
+                ),
               ],
-            ));
-      },
-      child: Scaffold(
-        body: Column(
-          children: <Widget>[
-            Expanded(
-              flex: 3,
-              child: Container(
-                padding: EdgeInsets.all(15.0),
-                alignment: Alignment.bottomLeft,
+            ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: <Widget>[
+              Text(
+                'Question $qn',
+                style: TextStyle(
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.black,
+                ),
+              ),
+              Text(
+                '/${mydata[0].length}',
+                style: TextStyle(
+                  fontSize: 16.0,
+                  color: Colors.grey[300],
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
+          ),
+          Container(
+            padding: const EdgeInsets.all(25.0),
+            margin: const EdgeInsets.symmetric(vertical: 30.0),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10.0),
+            ),
+            child: Text(
+              HtmlUnescape().convert(mydata[0][i.toString()]),
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 22.0,
+                color: Colors.black,
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 6,
+            child: Container(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  choicebutton('a'),
+                  choicebutton('b'),
+                  choicebutton('c'),
+                  choicebutton('d'),
+                ],
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              alignment: Alignment.topCenter,
+              child: Center(
                 child: Text(
-                  mydata[0][i.toString()],
+                  showtimer,
                   style: TextStyle(
-                    fontSize: 16.0,
-                    fontFamily: "Quando",
+                    fontSize: 35.0,
+                    fontWeight: FontWeight.w700,
+                    fontFamily: 'Balsamiq',
                   ),
                 ),
               ),
             ),
-            Expanded(
-              flex: 6,
-              child: Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    choicebutton('a'),
-                    choicebutton('b'),
-                    choicebutton('c'),
-                    choicebutton('d'),
-                  ],
-                ),
-              ),
-            ),
-            Expanded(
-              flex: 1,
-              child: Container(
-                alignment: Alignment.topCenter,
-                child: Center(
-                  child: Text(
-                    showtimer,
-                    style: TextStyle(
-                      fontSize: 35.0,
-                      fontWeight: FontWeight.w700,
-                      fontFamily: 'Times New Roman',
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

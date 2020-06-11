@@ -3,23 +3,21 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
-import 'package:quizappteamgold/quizpage.dart';
+import 'package:quizappteamgold/screens/quizpage.dart';
+import 'package:quizappteamgold/components/custom_button.dart';
 
 class homepage extends StatefulWidget {
-
   @override
   _homepageState createState() => _homepageState();
 }
 
 class _homepageState extends State<homepage> {
-
-  List<String> images =  [
+  List<String> images = [
     "images/py.png",
     "images/java.png",
     "images/js.png",
     "images/cpp.png",
   ];
-
 
   List<String> des = [
     "Python is one of the most popular and fastest programming language since half a decade.\nIf You think you have learnt it.. \nJust test yourself !!",
@@ -28,24 +26,17 @@ class _homepageState extends State<homepage> {
     "C++, being a statically typed programming language is very powerful and Fast.\nit's DMA feature makes it more useful. !",
   ];
 
-
-  Widget customcard(String langname, String image, String desc){
+  Widget customcard(String langname, String image, String desc) {
+    Size screen = MediaQuery.of(context).size;
     return Padding(
       padding: EdgeInsets.all(
-
-
         20.0,
       ),
       child: InkWell(
-        onTap: (){
-          Navigator.of(context).pushReplacement(MaterialPageRoute(
-            builder: (context) => getjson(langname),
-          ));
-        },
         child: Material(
           color: Colors.indigoAccent,
           elevation: 10.0,
-          borderRadius: BorderRadius.circular(20.0),
+          borderRadius: BorderRadius.circular(15.0),
           child: Container(
             child: Column(
               children: <Widget>[
@@ -55,16 +46,14 @@ class _homepageState extends State<homepage> {
                   ),
                   child: Material(
                     elevation: 5.0,
-                    borderRadius: BorderRadius.circular(100.0),
                     child: Container(
-                      height: 200,
-                      width: 200,
-                      child: ClipOval(
-                        child: Image(
-                          image: AssetImage(
+                      height: screen.width / 3,
+                      width: screen.width / 3,
+                      child: Image(
+                        image: AssetImage(
                           image,
-                          ),
                         ),
+                        fit: BoxFit.cover,
                       ),
                     ),
                   ),
@@ -75,23 +64,32 @@ class _homepageState extends State<homepage> {
                     style: TextStyle(
                       fontSize: 24.0,
                       color: Colors.white,
-                      fontFamily: "Quando",
+                      fontFamily: "Balsamiq",
                       fontWeight: FontWeight.w700,
                     ),
                   ),
                 ),
                 Container(
                   padding: EdgeInsets.all(20.0),
-                child: Text(
-                  desc,
-                  style: TextStyle(
-                    fontSize: 18.0,
-                    color: Colors.white,
-                    fontFamily: "Alike"
+                  child: Text(
+                    desc,
+                    style: TextStyle(
+                        fontSize: 18.0,
+                        color: Colors.white,
+                        fontFamily: "Balsamiq"),
+                    maxLines: 5,
+                    textAlign: TextAlign.justify,
                   ),
-                  maxLines: 5,
-                  textAlign: TextAlign.justify,
                 ),
+                Center(
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                        builder: (context) => getjson(langname),
+                      ));
+                    },
+                    child: CustomButton(text: 'Take test!'),
+                  ),
                 ),
               ],
             ),
@@ -100,19 +98,21 @@ class _homepageState extends State<homepage> {
       ),
     );
   }
+
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.portraitDown, DeviceOrientation.portraitUp
-    ]);
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text(
-          "Quiz App by Team Gold",
+          "Team Gold Quiz App",
           style: TextStyle(
-            fontFamily: "Quando",
+            fontFamily: "Balsamiq",
           ),
-        )
+        ),
+        backgroundColor: Colors.indigoAccent,
       ),
       body: ListView(
         children: <Widget>[
