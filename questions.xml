@@ -1,0 +1,147 @@
+
+JAVA QUESTIONS
+
+1) Which of the following option leads to the portability and security of Java?
+
+Bytecode is executed by JVM
+The applet makes the Java code secure and portable
+Use of exception handling
+Dynamic binding between objects
+
+Answer:(a) Bytecode is executed by the JVM.
+
+
+2)
+Which of the following is not a Java features?
+
+Dynamic
+Architecture Neutral
+Use of pointers
+Object-oriented
+
+Answer: c Use of pointers
+
+
+3) What will be the output of the following program?
+
+public class MyFirst {  
+      public static void main(String[] args) {  
+         MyFirst obj = new MyFirst(n);  
+ }  
+ static int a = 10;  
+ static int n;  
+ int b = 5;  
+ int c;  
+ public MyFirst(int m) {  
+       System.out.println(a + ", " + b + ", " + c + ", " + n + ", " + m);  
+   }  
+// Instance Block  
+  {  
+     b = 30;  
+     n = 20;  
+  }   
+// Static Block  
+  static   
+{  
+          a = 60;  
+     }   
+ }  
+
+a 10, 5, 0, 20, 0
+b 10, 30, 20
+c 60, 5, 0, 20
+d 60, 30, 0, 20, 0
+
+Answer:(d) 60, 30, 0, 20, 0
+
+PYTON QUESTIONS
+
+4). Is Python case sensitive when dealing with identifiers?
+a) yes
+b) no
+c) machine dependent
+d) none of the mentioned
+Answer:  a yes
+
+
+
+5) Which of the following is invalid?
+a) _a = 1
+b) __a = 1
+c) __str__ = 1
+d) none of the mentioned
+
+Answer: d
+
+
+6) Which of the following cannot be a variable?
+a) __init__
+b) in
+c) it
+d) on
+
+Answer: b
+
+
+HTML QUESTIONS
+
+7)  HTML stands for?
+
+A.	Hyper Text Markup Language
+B.	High Text Markup Language
+C.	Hyper Tabular Markup Language
+D.	None of these
+ 	
+Option: A
+
+8)  
+which of the following tag is used to mark a begining of paragraph ?
+
+A.	
+<TD>
+
+B.	
+<br>
+
+C.	
+<P>
+
+D.	
+<TR>
+
+ Option: C
+  
+  9) The attribute of <form> tag
+
+A.	
+Method
+
+B.	
+Action
+
+C.	
+Both (a)&(b)
+
+D.	
+None of these
+ 	
+Option: C
+  
+  
+  10)  
+  
+The body tag usually used after
+
+A.	
+Title tag
+
+B.	
+HEAD tag
+
+C.	
+EM tag
+
+D.	
+FORM tag
+
+Option: B
