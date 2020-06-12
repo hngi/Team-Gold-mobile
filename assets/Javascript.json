@@ -1,0 +1,88 @@
+[
+    {
+        "1": "The web development environment (JavaScript) offers which standard construct for data validation of the input entered by the user.",
+        "2": "JavaScript is ideal to ________ ?",
+        "3": "Which of the following Attribute is used to include External JS code inside your HTML Document ?",
+        "4": " A hexadecimal literal begins with __________",
+        "5": "What will be the output of the following JavaScript code\n\nint a=1\n;if(a!=null)\n\treturn 1;\nelse\n\treturn 0;?",
+        "6": "The statement a===b refers to ________",
+        "7": "JavaScript _________ when there is an indefinite or an infinite value during an arithmetic computation. ",
+        "8": "Which of the following is not considered as an error in JavaScript ?",
+        "9": "A function definition expression can be called as __________",
+        "10": "An expression that can legally appear on the left side of an assignment expression.”\nis a well known explanation for variables, properties of objects, and elements of arrays. They are called ___________"
+    },
+    {
+        "1": {
+            "a": "Controlled loop constructs",
+            "b": "Server page access",
+            "c": "Client side Event",
+            "d": "Permit server-side"
+        },
+        "2": {
+            "a": "make computations in HTML simpler",
+            "b": "minimize storage requirements on the web server",
+            "c": "increase the download time for the client",
+            "d": "increase the loading time of the website"
+        },
+        "3": {
+            "a": "src",
+            "b": "ext",
+            "c": "script",
+            "d": "link"
+        },
+        "4": {
+            "a": "00",
+            "b": "0x",
+            "c": "0X",
+            "d": "Both 0x and 0X"
+        },
+        "5": {
+            "a": "1",
+            "b": "0",
+            "c": "runtime error",
+            "d": "compiler error"
+        },
+        "6": {
+            "a": "Both a and b are equal in value, type and reference address",
+            "b": "Both a and b are equal in value",
+            "c": "Both a and b are equal in value and type",
+            "d": "There is no such statement"
+        },
+        "7": {
+            "a": "Prints an exception error",
+            "b": "Prints an overflow error",
+            "c": "Displays “Infinity”",
+            "d": "Prints the value as such"
+        },
+        "8": {
+            "a": "Syntax error",
+            "b": "Missing of semicolons",
+            "c": "Division by zero",
+            "d": "Missing of Bracket"
+        },
+        "9": {
+            "a": "Function prototype",
+            "b": "Function literal",
+            "c": "Function calling",
+            "d": "Function declaration"
+        },
+        "10": {
+            "a": "Properties",
+            "b": "Prototypes",
+            "c": "Lvalue",
+            "d": "Definition"
+        }
+    },
+    {
+        "1": "Controlled loop constructs",
+        "2": "minimize storage requirements on the web server",
+        "3": "src",
+        "4": "Both 0x and 0X",
+        "5": "1",
+        "6": "Both a and b are equal in value and type",
+        "7": "Displays “Infinity”",
+        "8": "Division by zero",
+        "9": "Function literal",
+        "10": "Lvalue"
+    }
+]
