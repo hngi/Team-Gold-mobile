@@ -1,0 +1,88 @@
+[
+    {
+        "1": "What Will Be The Output Of the Following Code ?\nif(1 + 1 + 1 + 1 + 1 == 5){\n\tSystem.out.print(\"TRUE\");\n}\n\telse{\n\tSystem.out.print(\"FALSE\");\n};",
+        "2": " What is the range of short data type in Java ?",
+        "3": "Which data type value is returned by all transcendental math functions ?",
+        "4": "Which of these is necessary condition for automatic type conversion in Java ?",
+        "5": "What will be the error in the following Java code?\nbyte b = 50;\nb = b * 50;",
+        "6": "What will be the output of the following Java program?\n\nclass c\n{\n\tpublic void main( String[] args )\n{\n\tSystem.out.println( \"Hello\" + args[0] );\n}\n}",
+        "7": "Modulus operator, %, can be applied to which of these?",
+        "8": "Decrement operator, −−, decreases the value of variable by what number?",
+        "9": "Which of these statements are incorrect?",
+        "10": "How to copy contents of array?"
+    },
+    {
+        "1": {
+            "a": "TRUE",
+            "b": "BOTH",
+            "c": "ERROR",
+            "d": "FALSE"
+        },
+        "2": {
+            "a": "-128 to 127",
+            "b": "-32768 to 32767",
+            "c": "-2147483648 to 2147483647",
+            "d": "None of the mentioned"
+        },
+        "3": {
+            "a": "int",
+            "b": "float",
+            "c": "double",
+            "d": "long"
+        },
+        "4": {
+            "a": "The destination type is smaller than source type",
+            "b": "The destination type is larger than source type",
+            "c": "The destination type can be larger or smaller than source type",
+            "d": "None of the mentioned"
+        },
+        "5": {
+            "a": "b cannot contain value 100, limited by its range",
+            "b": "* operator has converted b * 50 into int, which can not be converted to byte without casting",
+            "c": "b cannot contain value 50",
+            "d": "No error in this code"
+        },
+        "6": {
+            "a": "Hello c",
+            "b": "Hello",
+            "c": "Hello world",
+            "d": "Runtime Error"
+        },
+        "7": {
+            "a": "Integers",
+            "b": "Floating – point numbers",
+            "c": "Both Integers and floating – point numbers",
+            "d": "None of the mentioned"
+        },
+        "8": {
+            "a": "1",
+            "b": "2",
+            "c": "3",
+            "d": "4"
+        },
+        "9": {
+            "a": "Assignment operators are more efficiently implemented by Java run-time system than their equivalent long forms",
+            "b": "Assignment operators run faster than their equivalent long forms",
+            "c": "Assignment operators can be used only with numeric and character data type",
+            "d": "None of the mentioned"
+        },
+        "10": {
+            "a": "System.arrayCopy()",
+            "b": "Array.copy()",
+            "c": "Arrays.copy()",
+            "d": "Collection.copy()"
+        }
+    },
+    {
+        "1": "TRUE",
+        "2": "-32768 to 32767",
+        "3": "double",
+        "4": "The destination type is larger than source type",
+        "5": "* operator has converted b * 50 into int, which can not be converted to byte without casting",
+        "6": "Runtime Error",
+        "7": "Both Integers and floating – point numbers",
+        "8": "1",
+        "9": "None of the mentioned",
+        "10": "System.arrayCopy()"
+    }
+]

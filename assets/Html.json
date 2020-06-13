@@ -1,0 +1,88 @@
+[
+    {
+        "1": "HTML is what type of language ?",
+        "2": "HTML uses ?",
+        "3": "The year in which HTML was first proposed _______ ?",
+        "4": "Apart from <b> tag, what other tag makes text bold ?",
+        "5": "How can you make a bulleted list with numbers ?",
+        "6": "What tag is used to display a picture in a HTML page ?",
+        "7": "HTML tags are surrounded by which type of brackets ?",
+        "8": "HTML web pages can be read and rendered by _________ ?",
+        "9": "Tags and texts that are not directly displayed on the page are written in _____ section ?",
+        "10": "Which HTML tag produces the biggest heading ?"
+    },
+    {
+        "1": {
+            "a": "Scripting Language",
+            "b": "Markup Language",
+            "c": "Programming Language",
+            "d": "Network Protocol"
+        },
+        "2": {
+            "a": "1990",
+            "b": "1980",
+            "c": "2000",
+            "d": "1995"
+        },
+        "3": {
+            "a": "<fat>",
+            "b": "<strong>",
+            "c": "<black>",
+            "d": "<emp>"
+        },
+        "4": {
+            "a": "cout",
+            "b": "print",
+            "c": "println",
+            "d": "stderr"
+        },
+        "5": {
+            "a": "<dl>",
+            "b": "<ol>",
+            "c": "<list>",
+            "d": "<ul>"
+        },
+        "6": {
+            "a": "<picture>",
+            "b": "<image>",
+            "c": "<img>",
+            "d": "<src>"
+        },
+        "7": {
+            "a": "Curly",
+            "b": "Round",
+            "c": "Squart",
+            "d": "Angle"
+        },
+        "8": {
+            "a": "Compiler",
+            "b": "Server",
+            "c": "Web Browser",
+            "d": "Interpreter"
+        },
+        "9": {
+            "a": "<head>",
+            "b": "<title>",
+            "c": "<body>",
+            "d": "<html>"
+        },
+        "10": {
+            "a": "<h7>",
+            "b": "<h9>",
+            "c": "<h4>",
+            "d": "<h1>"
+        }
+    },
+    {
+        "1": "Markup Language",
+        "2": "1990",
+        "3": "<strong>",
+        "4": "print",
+        "5": "<ol>",
+        "6": "<img>",
+        "7": "Angle",
+        "8": "Web Browser",
+        "9": "<head>",
+        "10": "<h1>"
+    }
+]

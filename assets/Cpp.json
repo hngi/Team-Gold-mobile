@@ -1,0 +1,88 @@
+[
+    {
+        "1": "Which of the following is not a C++ Header file ?",
+        "2": "Which of the following is the correct syntax of including a user defined header files in C++ ?",
+        "3": "Which of the following is a correct identifier in C++ ?",
+        "4": "Wrapping data and its related functionality into a single entity is known as _____________ ?",
+        "5": "What does polymorphism in OOPs mean ?",
+        "6": "Which of the following shows multiple inheritances?",
+        "7": "C++ is ______________ ?",
+        "8": "A language which has the capability to generate new data types are called ________________ ?",
+        "9": " Which of the following is called extraction/get from operator ?",
+        "10": "Who created C++ ?"
+    },
+    {
+        "1": {
+            "a": "conio.h",
+            "b": "cstdlib.h",
+            "c": "stdio.h",
+            "d": "math.h"
+        },
+        "2": {
+            "a": "#include <userdefined.h>",
+            "b": "#include <userdefined>",
+            "c": "#include “userdefined”",
+            "d": "#include [userdefined]"
+        },
+        "3": {
+            "a": "7var_name",
+            "b": "7VARNAME",
+            "c": "VAR_1234",
+            "d": "$var_name"
+        },
+        "4": {
+            "a": "Abstraction",
+            "b": "Encapsulation",
+            "c": "Polymorphism",
+            "d": "Modularity"
+        },
+        "5": {
+            "a": "Concept of allowing overiding of functions",
+            "b": "Concept of hiding data",
+            "c": "Concept of keeping things in differnt modules/files",
+            "d": "Concept of wrapping things into a single unit"
+        },
+        "6": {
+            "a": "A->B->C",
+            "b": "A->B; A->C",
+            "c": "A,B->C",
+            "d": "B->A"
+        },
+        "7": {
+            "a": "procedural programming language",
+            "b": "object oriented programming language",
+            "c": "functional programming language",
+            "d": "both procedural and object oriented programming language"
+        },
+        "8": {  
+            "a": "Extensible",
+            "b": "Overloaded",
+            "c": "Encapsulated",
+            "d": "Reprehensible"
+        },
+        "9": {
+            "a": "<<",
+            "b": ">>",
+            "c": ">",
+            "d": "<"
+        },
+        "10": {
+            "a": "Bjarne Stroustrup",
+            "b": "Dennis Ritchie",
+            "c": "Ken Thompson",
+            "d": "Brian Kernighan"
+        }
+    },
+    {
+        "1": "stdio.h",
+        "2": "#include “userdefined”",
+        "3": "VAR_1234",
+        "4": "Encapsulation",
+        "5": "Concept of allowing overiding of functions",
+        "6": "A,B->C",
+        "7": "both procedural and object oriented programming language",
+        "8": "Extensible",
+        "9": ">>",
+        "10": "def"
+    }
+]
