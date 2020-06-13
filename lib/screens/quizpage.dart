@@ -88,10 +88,11 @@ class _quizpageState extends State<quizpage> {
   genrandomarray() {
     var distinctIds = [];
     var rand = new Random();
-    for (int i = 0;;) {
-      distinctIds.add(rand.nextInt(10));
+    for (int i = 1;;) {
+      distinctIds.add(rand.nextInt(11));
       random_array = distinctIds.toSet().toList();
-      if (random_array.length < 10) {
+      var x = random_array.length < 11;
+      if (x) {
         continue;
       } else {
         break;
@@ -168,10 +169,15 @@ class _quizpageState extends State<quizpage> {
   }
 
   Widget choicebutton(String k) {
-    return Padding(
-      padding: EdgeInsets.symmetric(
-        vertical: 10.0,
-        horizontal: 20.0,
+    return Container(
+      margin: const EdgeInsets.only(bottom: 10.0),
+      padding: const EdgeInsets.all(10.0),
+      decoration: BoxDecoration(
+        border: Border.all(
+          color: btncolor[k],
+          width: 2.0,
+        ),
+        borderRadius: BorderRadius.circular(180.0),
       ),
       child: MaterialButton(
         onPressed: () => checkanswer(k),
@@ -205,7 +211,7 @@ class _quizpageState extends State<quizpage> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 5.0),
+            padding: const EdgeInsets.symmetric(vertical: 4.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: <Widget>[
@@ -215,7 +221,7 @@ class _quizpageState extends State<quizpage> {
                   },
                   child: Icon(
                     Icons.close,
-                    color: Colors.indigoAccent,
+                    color: Colors.transparent,
                     size: 32.0,
                   ),
                 ),
@@ -235,7 +241,7 @@ class _quizpageState extends State<quizpage> {
                 ),
               ),
               Text(
-                '/${mydata[0].length}',
+                '/${mydata[0].length - 1}',
                 style: TextStyle(
                   fontSize: 16.0,
                   color: Colors.grey[300],
@@ -246,7 +252,7 @@ class _quizpageState extends State<quizpage> {
           ),
           Container(
             padding: const EdgeInsets.all(25.0),
-            margin: const EdgeInsets.symmetric(vertical: 30.0),
+            margin: const EdgeInsets.symmetric(vertical: 25.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10.0),
             ),
@@ -260,7 +266,7 @@ class _quizpageState extends State<quizpage> {
             ),
           ),
           Expanded(
-            flex: 6,
+            flex: 4,
             child: Container(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,

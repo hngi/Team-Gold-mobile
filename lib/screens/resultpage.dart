@@ -15,7 +15,8 @@ class _resultpageState extends State<resultpage> {
     "images/bad.jpeg",
   ];
 
-  String message;
+  String message1;
+  String message2;
   String image;
   Color myColor;
 
@@ -23,15 +24,18 @@ class _resultpageState extends State<resultpage> {
   void initState() {
     if (marks < 20) {
       image = images[2];
-      message = "You have a long way to go...\n" + "You Scored $marks";
+      message1 = "You Scored $marks";
+      message2 = "You have a long way to go..";
       myColor = Color.fromRGBO(190, 56, 55, 1.0);
     } else if (marks < 35) {
       image = images[1];
-      message = "Try harder...\n" + "You Scored $marks";
-      myColor = Colors.grey;
+      message1 = "You Scored $marks";
+      message2 = "Try harder...";
+      myColor = Colors.blueGrey;
     } else {
       image = images[0];
-      message = "You are good...\n" + "You Scored $marks";
+      message1 = "You Scored $marks";
+      message2 = "You are good...";
       myColor = Colors.green;
     }
     super.initState();
@@ -43,9 +47,12 @@ class _resultpageState extends State<resultpage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
+        centerTitle: true,
         backgroundColor: myColor,
         title: Text(
-          "Result",
+          message1,
           style: TextStyle(
             fontFamily: "Balsamiq",
           ),
@@ -79,10 +86,12 @@ class _resultpageState extends State<resultpage> {
                       ),
                       child: Center(
                         child: Text(
-                          message,
+                          message2,
                           style: TextStyle(
                             fontSize: 20.0,
+                            color: myColor,
                             fontFamily: "Balsamiq",
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                       ),
@@ -93,7 +102,7 @@ class _resultpageState extends State<resultpage> {
             ),
           ),
           Expanded(
-            flex: 4,
+            flex: 6,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
@@ -104,7 +113,7 @@ class _resultpageState extends State<resultpage> {
                     ));
                   },
                   child: Text(
-                    "Continue",                                                     
+                    "Continue",
                     style: TextStyle(
                       fontFamily: "Balsamiq",
                       fontSize: 18.0,
@@ -114,8 +123,8 @@ class _resultpageState extends State<resultpage> {
                     vertical: 10.0,
                     horizontal: 25.0,
                   ),
-                  borderSide: BorderSide(width: 3.0, color: Colors.indigo),
-                  splashColor: Colors.indigoAccent,
+                  borderSide: BorderSide(width: 3.0, color: myColor),
+                  splashColor: myColor,
                 )
               ],
             ),

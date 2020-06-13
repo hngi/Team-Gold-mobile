@@ -30,13 +30,14 @@ class _homepageState extends State<homepage> {
     Size screen = MediaQuery.of(context).size;
     return Padding(
       padding: EdgeInsets.all(
-        20.0,
+        30.0,
       ),
       child: InkWell(
         child: Material(
           color: Colors.indigoAccent,
           elevation: 10.0,
-          borderRadius: BorderRadius.circular(15.0),
+          borderRadius: BorderRadius.circular(20.0),
+          borderOnForeground: true,
           child: Container(
             child: Column(
               children: <Widget>[
@@ -88,7 +89,7 @@ class _homepageState extends State<homepage> {
                         builder: (context) => getjson(langname),
                       ));
                     },
-                    child: CustomButton(text: 'Take test!'),
+                    child: CustomButton(text: 'Take test'),
                   ),
                 ),
               ],
@@ -105,6 +106,8 @@ class _homepageState extends State<homepage> {
         [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return Scaffold(
       appBar: AppBar(
+        shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
         centerTitle: true,
         title: Text(
           "Team Gold Quiz App",
