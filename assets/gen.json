@@ -1,120 +1,86 @@
-{
-    "questions": [
-        {
-            "category": "Science: Computers",
-            "type": "boolean",
-            "difficulty": "medium",
-            "question": "FLAC stands for &quot;Free Lossless Audio Condenser&quot;&#039;",
-            "correct_answer": "False",
-            "incorrect_answers": [
-                "True"
-            ]
-        },
-        {
-            "category": "Science: Computers",
-            "type": "multiple",
-            "difficulty": "easy",
-            "question": "Which computer hardware device provides an interface for all other connected devices to communicate?",
-            "correct_answer": "Motherboard",
-            "incorrect_answers": [
-                "Central Processing Unit",
-                "Hard Disk Drive",
-                "Random Access Memory"
-            ]
-        },
-        {
-            "category": "Science: Computers",
-            "type": "multiple",
-            "difficulty": "medium",
-            "question": "What was the name given to Android 4.3?",
-            "correct_answer": "Jelly Bean",
-            "incorrect_answers": [
-                "Lollipop",
-                "Nutella",
-                "Froyo"
-            ]
-        },
-        {
-            "category": "Science: Computers",
-            "type": "boolean",
-            "difficulty": "medium",
-            "question": "To bypass US Munitions Export Laws, the creator of the PGP published all the source code in book form. ",
-            "correct_answer": "True",
-            "incorrect_answers": [
-                "False"
-            ]
-        },
-        {
-            "category": "Science: Computers",
-            "type": "multiple",
-            "difficulty": "medium",
-            "question": "What does the acronym CDN stand for in terms of networking?",
-            "correct_answer": "Content Delivery Network",
-            "incorrect_answers": [
-                "Content Distribution Network",
-                "Computational Data Network",
-                "Compressed Data Network"
-            ]
-        },
-        {
-            "category": "Science: Computers",
-            "type": "multiple",
-            "difficulty": "medium",
-            "question": "In the programming language &quot;Python&quot;, which of these statements would display the string &quot;Hello World&quot; correctly?",
-            "correct_answer": "print(&quot;Hello World&quot;)",
-            "incorrect_answers": [
-                "console.log(&quot;Hello World&quot;)",
-                "echo &quot;Hello World&quot;",
-                "printf(&quot;Hello World&quot;)"
-            ]
-        },
-        {
-            "category": "Science: Computers",
-            "type": "multiple",
-            "difficulty": "hard",
-            "question": "What is the name of the process that sends one qubit of information using two bits of classical information?",
-            "correct_answer": "Quantum Teleportation",
-            "incorrect_answers": [
-                "Super Dense Coding",
-                "Quantum Entanglement",
-                "Quantum Programming"
-            ]
-        },
-        {
-            "category": "Science: Computers",
-            "type": "multiple",
-            "difficulty": "medium",
-            "question": "What was the first Android version specifically optimized for tablets?",
-            "correct_answer": "Honeycomb",
-            "incorrect_answers": [
-                "Eclair",
-                "Froyo",
-                "Marshmellow"
-            ]
-        },
-        {
-            "category": "Science: Computers",
-            "type": "multiple",
-            "difficulty": "medium",
-            "question": "Laserjet and inkjet printers are both examples of what type of printer?",
-            "correct_answer": "Non-impact printer",
-            "incorrect_answers": [
-                "Impact printer",
-                "Daisywheel printer",
-                "Dot matrix printer"
-            ]
-        },
-        {
-            "category": "Science: Computers",
-            "type": "multiple",
-            "difficulty": "medium",
-            "question": "What is the number of keys on a standard Windows Keyboard?",
-            "correct_answer": "104",
-            "incorrect_answers": [
+[
+  {
+    "0": "Which computer hardware device provides an interface for all other connected devices to communicate?",
+    "1": "What was the name given to Android 4.3?",
+    "2": "What does the acronym CDN stand for in terms of networking?",
+    "3": "In the programming language &quot;Python&quot;, which of these statements would display the string &quot;Hello World&quot; correctly?",
+    "4": "What is the name of the process that sends one qubit of information using two bits of classical information?",
+    "5": "What was the first Android version specifically optimized for tablets?",
+    "6": "Laserjet and inkjet printers are both examples of what type of printer?",
+    "7": "What is the number of keys on a standard Windows Keyboard?"
+  },
+  {
+    "0": {
+      "a": "Motherboard",
+      "b": "Central Processing Unit",
+      "c": "Hard Disk Drive",
+      "d": "Random Access Memory"
+    },
+    "1": {
+      "a": "Lollipop",
+      "b": "Jelly Bean",
+      "c": "Nutella",
+      "d": "Froyo"
+    },
+    "2": {
+      "a": "Content Distribution Network",
+      "b": "Computational Data Network",
+      "c": "Content Delivery Network",
+      "d": "Compressed Data Network"
+    },
+    "3": {
+      "a": "console.log(&quot;Hello World&quot;)",
+      "b": "echo &quot;Hello World&quot;",
+      "c": "printf(&quot;Hello World&quot;)",
+      "d": "print(&quot;Hello World&quot;)"
+    },
+    "4": {
+      "a": "Quantum Teleportation",
+      "b": "Super Dense Coding",
+      "c": "Quantum Entanglement",
+      "d": "Quantum Programming"
+    }
+  },
+  {
+    "0": "Motherboard",
+    {
+        "correct_answer": "Quantum Teleportation",
+    },
+    {
+        "correct_answer": "Honeycomb",
+        "incorrect_answers": [
+            "Eclair",
+            "Froyo",
+            "Marshmellow"
+        ]
+    },
+    {
+        ,
+        "correct_answer": "Non-impact printer",
+        "incorrect_answers": [
+            "Impact printer",
+            "Daisywheel printer",
+            "Dot matrix printer"
+        ]
+    },
+    {
+        "correct_answer": "104",
+        "incorrect_answers": [
+            {
+                "correct_answer": "Quantum Teleportation",
+            },
+            {
                 "64",
                 "94",
                 "76"
             ]
         }
-    ]
-}
+    "1": "Jelly Bean",
+    "2": "Content Delivery Network",
+    "3": "print(&quot;Hello World&quot;)",
+    "4": "Quantum Teleportation",
+    "5": "",
+    "6": "",
+    "7": ""
+  }
+]

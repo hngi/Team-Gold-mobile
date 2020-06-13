@@ -1,88 +1,88 @@
 [
-    {
-        "1": "Which of the following is not a C++ Header file ?",
-        "2": "Which function finds out the Variable type in Python ?",
-        "3": "Which of the following keyword is used to define a function in Python ?",
-        "4": "Which of the following is a print Function in Python ?",
-        "5": "Which function finds out the Variable type in Python ?",
-        "6": "Which of the following keyword is used to define a function in Python ?",
-        "7": "Which function finds out the Variable type in Python ?",
-        "8": "Which of the following keyword is used to define a function in Python ?",
-        "9": "Which function finds out the Variable type in Python ?",
-        "10": "Which of the following keyword is used to define a function in Python ?"
+  {
+    "0": "What command prints something to the screen?",
+    "1": "Which of the following categories does C++ belong to?",
+    "2": "Which command is correctly written?",
+    "3": "What is this called, <iostream>?",
+    "4": "What will be the output of Round(3.7).",
+    "5": "Which tool is required on each machine to run a Java program?",
+    "6": "Which method of the Runnable interface that must be implemented by all threads?",
+    "7": "Base class for all exceptions",
+    "8": "Environment variable that stores the location of bin folder",
+    "9": "Which Keyword is used If a class has multiple constructors defined,it's possible to call a constructor from another constructor’s body?"
+  },
+  {
+    "0": {
+      "a": "cin",
+      "b": "cout",
+      "c": "char",
+      "d": "print"
     },
-    {
-        "1": {
-            "a": "conio.h",
-            "b": "cstdlib.h",
-            "c": "stdio.h",
-            "d": "math.h"
-        },
-        "2": {
-            "a": "typedef",
-            "b": "typeof",
-            "c": "type",
-            "d": "find"
-        },
-        "3": {
-            "a": "func",
-            "b": "def",
-            "c": "void",
-            "d": "function"
-        },
-        "4": {
-            "a": "cout",
-            "b": "print",
-            "c": "println",
-            "d": "stderr"
-        },
-        "5": {
-            "a": "typedef",
-            "b": "typeof",
-            "c": "type",
-            "d": "find"
-        },
-        "6": {
-            "a": "func",
-            "b": "def",
-            "c": "void",
-            "d": "function"
-        },
-        "7": {
-            "a": "typedef",
-            "b": "typeof",
-            "c": "type",
-            "d": "find"
-        },
-        "8": {
-            "a": "func",
-            "b": "def",
-            "c": "void",
-            "d": "function"
-        },
-        "9": {
-            "a": "typedef",
-            "b": "typeof",
-            "c": "type",
-            "d": "find"
-        },
-        "10": {
-            "a": "func",
-            "b": "def",
-            "c": "void",
-            "d": "function"
-        }
+    "1": {
+      "a": "Operating System",
+      "b": "High-level programming language",
+      "c": "low-level programming language",
+      "d": "Compiler"
     },
-    {
-        "1": "stdio.h",
-        "2": "type",
-        "3": "def",
-        "4": "print",
-        "5": "type",
-        "6": "def",
-        "7": "type",
-        "8": "def",
-        "9": "type",
-        "10": "def"
+    "2": {
+      "a": "cout >>",
+      "b": "cin <<",
+      "c": "cout <>",
+      "d": "cin >>"
+    },
+    "3": {
+      "a": "directive",
+      "b": "pre-processor directive",
+      "c": "file",
+      "d": "command"
+    },
+    "4": {
+      "a": ".",
+      "b": ";",
+      "c": ":",
+      "d": "'"
+    },
+    "5": {
+      "a": "*/ Comments */",
+      "b": "** Comment **",
+      "c": "/* Comment */",
+      "d": "{ Comment }"
+    },
+    "6": {
+      "a": "&",
+      "b": "|",
+      "c": "&&",
+      "d": "|&"
+    },
+    "7": {
+      "a": "if (expression)",
+      "b": "if {expression",
+      "c": "if (expression)",
+      "d": "expression if"
+    },
+    "8": {
+      "a": "1",
+      "b": "Infinitely",
+      "c": "Variable",
+      "d": "0"
+    },
+    "9": {
+      "a": "int anarray[10];",
+      "b": "int anarray",
+      "c": "anarray{10};",
+      "d": "array anarray[10];"
     }
+  },
+  {
+    "0": "cout",
+    "1": "High-level programming language",
+    "2": "cin >>",
+    "3": "pre-processor directive",
+    "4": ";",
+    "5": "/* Comment */",
+    "6": "|&",
+    "7": "if (expression)",
+    "8": "1",
+    "9": "int anarray[10];"
+  }
 ]

@@ -1,88 +1,88 @@
 [
-    {
-        "1": "Which of the following keyword is used as a function keyword in Javascript ?",
-        "2": "Which function finds out the Variable type in Python ?",
-        "3": "Which of the following keyword is used to define a function in Python ?",
-        "4": "Which of the following is a print Function in Python ?",
-        "5": "Which function finds out the Variable type in Python ?",
-        "6": "Which of the following keyword is used to define a function in Python ?",
-        "7": "Which function finds out the Variable type in Python ?",
-        "8": "Which of the following keyword is used to define a function in Python ?",
-        "9": "Which function finds out the Variable type in Python ?",
-        "10": "Which of the following keyword is used to define a function in Python ?"
+  {
+    "0": "Which of the following keyword is used as a function keyword in Javascript ?",
+    "1": "When would the final statement in the code shown be logged to the console?\n\nlet modal = document.querySelector('#result'); setTimeout(function(){ modal.classList.remove('hidden); }, 10000); console.log('Results shown');",
+    "2": "Which statement creates a new object using the Person constructor?",
+    "3": "Which statement is the correct way to create a variable called rate and assign it the value 100?",
+    "4": "Which statement calls the addTax function and passes 50 as an argument?\n\nfunction addTax(total){ return total * 1.05;}",
+    "5": "Which operator returns true if the two compared values are not equal?",
+    "6": "You need to match a time value such as 12:00:32. Which of the following regular expressions would work for your code?",
+    "7": "What is the result in the console of running this code?\n\n\"use strict\"; function logThis() { this.desc = 'logger'; console.log(this); } new logThis();",
+    "8": "How would you reference the text 'avenue' in the code shown?\n\nlet roadTypes = ['street', 'road', 'avenue', 'circle'];",
+    "9": "What is the result of running this statement?\n\nconsole.log(typeof(42));"
+  },
+  {
+    "0": {
+      "a": "func",
+      "b": "function",
+      "c": "void",
+      "d": "int"
     },
-    {
-        "1": {
-            "a": "func",
-            "b": "function",
-            "c": "void",
-            "d": "int"
-        },
-        "2": {
-            "a": "typedef",
-            "b": "typeof",
-            "c": "type",
-            "d": "find"
-        },
-        "3": {
-            "a": "func",
-            "b": "def",
-            "c": "void",
-            "d": "function"
-        },
-        "4": {
-            "a": "cout",
-            "b": "print",
-            "c": "println",
-            "d": "stderr"
-        },
-        "5": {
-            "a": "typedef",
-            "b": "typeof",
-            "c": "type",
-            "d": "find"
-        },
-        "6": {
-            "a": "func",
-            "b": "def",
-            "c": "void",
-            "d": "function"
-        },
-        "7": {
-            "a": "typedef",
-            "b": "typeof",
-            "c": "type",
-            "d": "find"
-        },
-        "8": {
-            "a": "func",
-            "b": "def",
-            "c": "void",
-            "d": "function"
-        },
-        "9": {
-            "a": "typedef",
-            "b": "typeof",
-            "c": "type",
-            "d": "find"
-        },
-        "10": {
-            "a": "func",
-            "b": "def",
-            "c": "void",
-            "d": "function"
-        }
+    "1": {
+      "a": "after 10 second",
+      "b": "never",
+      "c": "after 10000 seconds",
+      "d": "immediately"
     },
-    {
-        "1": "function",
-        "2": "type",
-        "3": "def",
-        "4": "print",
-        "5": "type",
-        "6": "def",
-        "7": "type",
-        "8": "def",
-        "9": "type",
-        "10": "def"
+    "2": {
+      "a": "var student = construct Person();",
+      "b": "var student = Person();",
+      "c": "var student = construct Person;",
+      "d": "var student = new Person()"
+    },
+    "3": {
+      "a": "let rate = 100;",
+      "b": "let 100 = rate;",
+      "c": "100 = let rate;",
+      "d": "rate = 100;"
+    },
+    "4": {
+      "a": "addTax = 50;",
+      "b": "addTax(50);",
+      "c": "return addTax 50;",
+      "d": "addTax 50;"
+    },
+    "5": {
+      "a": "<>",
+      "b": "~",
+      "c": "!==",
+      "d": "==!"
+    },
+    "6": {
+      "a": "/[0-9]+:[0-9]+:[0-9]+/",
+      "b": "/ : : /",
+      "c": "/\\d\\d:\\d\\d:\\d\\d/",
+      "d": "/[0-9]{2,}:[0-9]{2,}:[0-9]{2,}/"
+    },
+    "7": {
+      "a": "{desc: 'logger'}",
+      "b": "undefined",
+      "c": "window",
+      "d": "function"
+    },
+    "8": {
+      "a": "roadTypes.2",
+      "b": "roadTypes[3]",
+      "c": "roadTypes.3",
+      "d": "roadTypes[2]"
+    },
+    "9": {
+      "a": "'float'",
+      "b": "'value'",
+      "c": "'integer'",
+      "d": "'number'"
     }
+  },
+  {
+    "0": "function",
+    "1": "immediately",
+    "2": "var student = new Person()",
+    "3": "let rate = 100;",
+    "4": "addTax(50);",
+    "5": "!==",
+    "6": "/[0-9]+:[0-9]+:[0-9]+/",
+    "7": "{desc: 'logger'}",
+    "8": "roadTypes[2]",
+    "9": "'number'"
+  }
 ]

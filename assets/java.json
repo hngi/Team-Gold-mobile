@@ -6,10 +6,10 @@
         "3": "In java, float takes _________ bytes in memory.",
         "4": "What will be the output of Round(3.7).",
         "5": "Which tool is required on each machine to run a Java program?",
-        "7": "Which function finds out the Variable type in Python ? 7",
-        "8": "Which of the following keyword is used to define a function in Python ?  8",
-        "9": "Which function finds out the Variable type in Python ? 9",
-        "10": "Which of the following keyword is used to define a function in Python ? 10"
+        "6": "Which method of the Runnable interface that must be implemented by all threads?",
+        "7": "Base class for all exceptions",
+        "8": "Environment variable that stores the location of bin folder",
+        "9": "Which Keyword is used If a class has multiple constructors defined,it's possible to call a constructor from another constructor’s body?"
     },
     {
         "0": {
@@ -49,41 +49,44 @@
             "d": "CVS"
         
         },
+        "6": {
+            "a": "Run()",
+            "b": "Start()",
+            "c": "Sleep()",
+            "d": "Wait()"
+        },
         "7": {
-            "a": "typedef",
-            "b": "typeof",
-            "c": "type",
-            "d": "find"
+            "a": "Java.throwable",
+            "b": "Java.Lang.throwable",
+            "c": "Java.Lang.Exception",
+            "d": "Java.Lang.throwables"
         },
         "8": {
-            "a": "func",
-            "b": "def",
-            "c": "void",
-            "d": "function"
+            "a": "PATH",
+            "b": "CLASSPATH",
+            "c": "PATHS",
+            "d": "BIN"
         },
         "9": {
-            "a": "typedef",
-            "b": "typeof",
-            "c": "type",
-            "d": "find"
-        },
-        "10": {
-            "a": "func",
-            "b": "def",
-            "c": "void",
-            "d": "function"
+            "a": "super()",
+            "b": "constant()",
+            "c": "this()",
+            "d": "where()"
+            
+
+
         }
     },
     {
-        "1": "TRUE",
-        "2": "type",
-        "3": "def",
-        "4": "print",
-        "5": "type",
-        "6": "def",
-        "7": "type",
-        "8": "def",
-        "9": "type",
-        "10": "def"
+        "0": "Bytecode is executed by the JVM",
+        "1": "Use of pointers",
+        "2": "sub-class",
+        "3": "4",
+        "4": "4",
+        "5": "JRE",
+        "6": "Run()",
+        "7": "Java.Lang.throwable",
+        "8": "PATH",
+        "9": "this()"
     }
 ]
