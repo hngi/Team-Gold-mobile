@@ -22,8 +22,8 @@ class _homepageState extends State<homepage> {
   List<String> des = [
     "Python is one of the most popular and fastest programming language since half a decade.\nIf You think you have learnt it.. \nJust test yourself !!",
     "Java has always been one of the best choices for Enterprise World. If you think you have learn the Language...\nJust Test Yourself !!",
-    "Javascript is one of the most Popular programming language supporting the Web.\nIt has a wide range of Libraries making it Very Powerful !",
-    "C++, being a statically typed programming language is very powerful and Fast.\nit's DMA feature makes it more useful. !",
+    "Javascript is one of the most Popular programming language supporting the Web.\nIt has a wide range of libraries making it Very Powerful !",
+    "C++, being a statically typed programming language is very powerful and Fast.\nit's DMA feature makes it more useful!",
   ];
 
   Widget customcard(String langname, String image, String desc) {
@@ -107,10 +107,10 @@ class _homepageState extends State<homepage> {
     return Scaffold(
       appBar: AppBar(
         shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(35.0)),
         centerTitle: true,
         title: Text(
-          "Team Gold Quiz App",
+          "Geek Tutor",
           style: TextStyle(
             fontFamily: "Balsamiq",
           ),

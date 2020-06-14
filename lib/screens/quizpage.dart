@@ -217,7 +217,20 @@ class _quizpageState extends State<quizpage> {
               children: <Widget>[
                 GestureDetector(
                   onTap: () {
-                    Navigator.pushReplacementNamed(context, 'home');
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: Text('WoW you found my Easter Egg'),
+                            content: Text(
+                                'Send me a mail at aikinslaryea@gmail.com'),
+                            actions: <Widget>[
+                              FlatButton(
+                                  onPressed: () => Navigator.of(context).pop(),
+                                  child: Text('🤣'))
+                            ],
+                          );
+                        });
                   },
                   child: Icon(
                     Icons.close,
@@ -241,7 +254,7 @@ class _quizpageState extends State<quizpage> {
                 ),
               ),
               Text(
-                '/${mydata[0].length - 1}',
+                '/${mydata[0].length}',
                 style: TextStyle(
                   fontSize: 16.0,
                   color: Colors.grey[300],
