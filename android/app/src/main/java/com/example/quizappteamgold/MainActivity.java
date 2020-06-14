@@ -1,4 +1,4 @@
-package com.example.quizappteamgold;
+package com.hngi7teamgold.geektutor;
 
 import io.flutter.embedding.android.FlutterActivity;
 
