@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:convert';
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:quizappteamgold/resultpage.dart';
@@ -53,7 +52,7 @@ class getjson extends StatelessWidget {
 class quizpage extends StatefulWidget {
   var mydata;
 
-  quizpage({Key key, @required this.mydata}) : super(key: key);
+  quizpage({Key key, @required this.mydata}) : super(key : key);
   @override
   _quizpageState createState() => _quizpageState(mydata);
 }
@@ -67,11 +66,9 @@ class _quizpageState extends State<quizpage> {
   Color wrong = Colors.red;
   int marks = 0;
   int i = 1;
-  // extra varibale to iterate
   int j = 1;
   int timer = 30;
   String showtimer = "30";
-  var random_array;
 
   Map<String, Color> btncolor = {
     "a": Colors.indigoAccent,
@@ -84,25 +81,11 @@ class _quizpageState extends State<quizpage> {
 
 
 
-  genrandomarray(){
-    var distinctIds = [];
-    var rand = new Random();
-    for (int i = 0; ;) {
-      distinctIds.add(rand.nextInt(10));
-      random_array = distinctIds.toSet().toList();
-      if(random_array.length < 10){
-        continue;
-      }else{
-        break;
-      }
-    }
-    print(random_array);
-  }
+
 
   @override
   void initState() {
     starttimer();
-    genrandomarray();
     super.initState();
   }
 
@@ -135,9 +118,8 @@ class _quizpageState extends State<quizpage> {
     canceltimer = false;
     timer = 30;
     setState(() {
-      if (j < 10) {
-        i = random_array[j];
-        j++;
+      if (i < 10) {
+        i++;
       } else {
         Navigator.of(context).pushReplacement(MaterialPageRoute(
           builder: (context) => resultpage(marks: marks),
@@ -205,7 +187,7 @@ class _quizpageState extends State<quizpage> {
             context: context,
             builder: (context) => AlertDialog(
               title: Text(
-                "Quiz app",
+                "Quiz app"
               ),
               content: Text("You Can't Go Back At This Stage."),
               actions: <Widget>[
